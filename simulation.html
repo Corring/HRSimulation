@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html> 
-    <!-- NOTE: AS OF 11/05/2020 the next page 
-        link DOES NOT WORK because there 
-        is no page for me to link it too!! 
-        NEED TO FIX AS SOON AS POSSIBLE. Then delete this note after!! 
-        ALSO: The font is different, we should figure out a default fault and apply it to all pages -->
+
 <head>
     <title>Start!</title>
     <meta charset="utf-8">
@@ -64,6 +60,7 @@
         }
 
 
+
         #left_dh{
             width: 0;
             height: 100%;
@@ -71,7 +68,7 @@
             display: block;
             position: fixed;
             left: 0;
-            
+            z-index: 9999;
         }
 
         #left_dh button{
@@ -82,8 +79,9 @@
             width: 100%;
             height: 100%;
             position: fixed;
-            background: rgb(182, 181, 181);
-            z-index: -999999;
+            background: rgb(0, 0, 0);
+            opacity: 0.6;
+            z-index: 999;
             display: none;
         }
         /*menu页面按键颜色*/
@@ -230,37 +228,37 @@
                 <label> 
                     <input type="checkbox" name="four1" value="true" id="checkDR1" onclick="checkboxDutiesandResp(this.id)"> Create and Improve Products</label>
                 <label> 
-                    <input type="checkbox" name="four6" value="false" id="checkDR2" onclick="checkboxDutiesandResp(this.id)"> --wrong answer-- </label>
+                    <input type="checkbox" name="four6" value="false" id="checkDR2" onclick="checkboxDutiesandResp(this.id)"> Sew Some Yarn </label>
                 <label> 
                     <input type="checkbox" name="four2" value="true" id="checkDR3" onclick="checkboxDutiesandResp(this.id)"> Review Market Research</label>
                 <label> 
                     <input type="checkbox" name="four3" value="true" id="checkDR4" onclick="checkboxDutiesandResp(this.id)"> Determine Specifications</label>
                 <label> 
-                    <input type="checkbox" name="four3" value="false" id="checkDR5" onclick="checkboxDutiesandResp(this.id)"> --wrong answer-- </label>
+                    <input type="checkbox" name="four3" value="false" id="checkDR5" onclick="checkboxDutiesandResp(this.id)"> Crochet </label>
                 <label> 
                     <input type="checkbox" name="four4" value="true" id="checkDR6" onclick="checkboxDutiesandResp(this.id)"> Develop Prototypes</label>
                 <label> 
                     <input type="checkbox" name="four5" value="true" id="checkDR7" onclick="checkboxDutiesandResp(this.id)"> Consult with Engineer and Supervisors</label>
                 <label> 
-                    <input type="checkbox" name="four7" value="false" id="checkDR8" onclick="checkboxDutiesandResp(this.id)"> --wrong answer-- </label>
+                    <input type="checkbox" name="four7" value="false" id="checkDR8" onclick="checkboxDutiesandResp(this.id)"> Stare At Birds </label>
                 <label> 
-                    <input type="checkbox" name="four8" value="false" id="checkDR9" onclick="checkboxDutiesandResp(this.id)"> --wrong answer-- </label>
+                    <input type="checkbox" name="four8" value="false" id="checkDR9" onclick="checkboxDutiesandResp(this.id)"> Cook Some Food </label>
                 <label> 
-                    <input type="checkbox" name="four9" value="false" id="checkDR10" onclick="checkboxDutiesandResp(this.id)"> --wrong answer-- </label>
+                    <input type="checkbox" name="four9" value="false" id="checkDR10" onclick="checkboxDutiesandResp(this.id)"> Nap </label>
             </div>
             <br><br>
             <div class="question">
                 <p><strong>Q5</strong>: Choose all the options that best describe Skills and Qualifications</p>
                 <label> 
-                    <input type="checkbox" name="five" value="false" id="checkSQ1" onclick="checkboxSkillsandQs(this.id)" onclick="markingCheckboxAns(this.value)"> --wrong answer--</label>
+                    <input type="checkbox" name="five" value="false" id="checkSQ1" onclick="checkboxSkillsandQs(this.id)" onclick="markingCheckboxAns(this.value)"> Go on the Greatest British Bake Off</label>
                 <label> 
                     <input type="checkbox" name="five" value="true" id="checkSQ2" onclick="checkboxSkillsandQs(this.id)" onclick="markingCheckboxAns(this.value)"> Engineering and Design Knowledge </label>
                 <label> 
-                    <input type="checkbox" name="five" value="false" id="checkSQ3" onclick="checkboxSkillsandQs(this.id)" onclick="markingCheckboxAns(this.value)"> --wrong answer--</label>
+                    <input type="checkbox" name="five" value="false" id="checkSQ3" onclick="checkboxSkillsandQs(this.id)" onclick="markingCheckboxAns(this.value)"> Eat Gummy Worms</label>
                 <label> 
                     <input type="checkbox" name="five" value="true" id="checkSQ4" onclick="checkboxSkillsandQs(this.id)" onclick="markingCheckboxAns(this.value)"> Prototype Development</label>
                 <label> 
-                    <input type="checkbox" name="five" value="false" id="checkSQ5" onclick="checkboxSkillsandQs(this.id)" onclick="markingCheckboxAns(this.value)"> --wrong answer-- </label>
+                    <input type="checkbox" name="five" value="false" id="checkSQ5" onclick="checkboxSkillsandQs(this.id)" onclick="markingCheckboxAns(this.value)"> Sleep 12 hours in the PM </label>
                 <label> 
                     <input type="checkbox" name="five" value="true" id="checkSQ6" onclick="checkboxSkillsandQs(this.id)" onclick="markingCheckboxAns(this.value)"> Team Collaboration</label>
                 <label> 
@@ -268,7 +266,7 @@
                 <label> 
                     <input type="checkbox" name="five" value="true" id="checkSQ8" onclick="checkboxSkillsandQs(this.id)" onclick="markingCheckboxAns(this.value)"> Creative Skills </label>
                 <label> 
-                    <input type="checkbox" name="five" value="false" id="checkSQ9" onclick="checkboxSkillsandQs(this.id)" onclick="markingCheckboxAns(this.value)"> --wrong answer-- </label>
+                    <input type="checkbox" name="five" value="false" id="checkSQ9" onclick="checkboxSkillsandQs(this.id)" onclick="markingCheckboxAns(this.value)"> Run a Mile </label>
                 <label> 
                     <input type="checkbox" name="five" value="true" id="checkSQ10" onclick="checkboxSkillsandQs(this.id)" onclick="markingCheckboxAns(this.value)"> Problem-Solving Skills </label>
             </div>
@@ -290,28 +288,28 @@
             <h2 style="font-size: 2.7vh;">Duties and Responsibilities:</h2> 
                 <!-- DandR and DR stands for Duties and Responsibilities, this is to identify the options for the checkboxes (and i couldnt think of a better name)  -->
                 <p id="checkDR1_text" class="checkDR1_steps" style="display:none; font-size: 2.3vh">Create and Improve Products</p>
-                <p id="checkDR2_text" class="checkDR1_steps" style="display:none; font-size: 2.3vh">––wrong answer––</p>
+                <p id="checkDR2_text" class="checkDR1_steps" style="display:none; font-size: 2.3vh">Sew Some Yarn </p>
                 <p id="checkDR3_text" class="checkDR1_steps" style="display:none; font-size: 2.3vh">Review Market Research</p>
                 <p id="checkDR4_text" class="checkDR1_steps" style="display:none; font-size: 2.3vh"> Determine Specifications</p>
-                <p id="checkDR5_text" class="checkDR1_steps" style="display:none; font-size: 2.3vh"> --wrong answer--</p>
+                <p id="checkDR5_text" class="checkDR1_steps" style="display:none; font-size: 2.3vh"> Crochet</p>
                 <p id="checkDR6_text" class="checkDR1_steps" style="display:none; font-size: 2.3vh">Develop Prototypes</p>
                 <p id="checkDR7_text" class="checkDR1_steps" style="display:none; font-size: 2.3vh">Consult with Engineer and Supervisors</p>
-                <p id="checkDR8_text" class="checkDR1_steps" style="display:none; font-size: 2.3vh"> --wrong answer--</p>
-                <p id="checkDR9_text" class="checkDR1_steps" style="display:none; font-size: 2.3vh"> --wrong answer--</p>
-                <p id="checkDR10_text" class="checkDR1_steps" style="display:none; font-size: 2.3vh"> --wrong answer--</p>
+                <p id="checkDR8_text" class="checkDR1_steps" style="display:none; font-size: 2.3vh"> Stare At Birds</p>
+                <p id="checkDR9_text" class="checkDR1_steps" style="display:none; font-size: 2.3vh"> Cook Some Food</p>
+                <p id="checkDR10_text" class="checkDR1_steps" style="display:none; font-size: 2.3vh"> Nap</p>
 
             <br>
             <h2 style="font-size: 2.7vh;">Skills and Qualifications:</h2>
                 <!-- S and Q stands for Skills and Qualifications, this is to identify the options for the checkboxes (and i couldnt think of a better name) -->
-                <p id="checkSQ1_text" class="checkSQ1_steps" style="display:none; font-size: 2.3vh"> --wrong answer--</p>
+                <p id="checkSQ1_text" class="checkSQ1_steps" style="display:none; font-size: 2.3vh"> Go on the Greatest British Bake Off</p>
                 <p id="checkSQ2_text" class="checkSQ1_steps" style="display:none; font-size: 2.3vh"> Engineering and Design Knowledge</p>
-                <p id="checkSQ3_text" class="checkSQ1_steps" style="display:none; font-size: 2.3vh"> --wrong answer--</p>
+                <p id="checkSQ3_text" class="checkSQ1_steps" style="display:none; font-size: 2.3vh"> Eat Gummy Worms</p>
                 <p id="checkSQ4_text" class="checkSQ1_steps" style="display:none; font-size: 2.3vh"> Prototype Development</p>
-                <p id="checkSQ5_text" class="checkSQ1_steps" style="display:none; font-size: 2.3vh"> --wrong answer--</p>
+                <p id="checkSQ5_text" class="checkSQ1_steps" style="display:none; font-size: 2.3vh"> Sleep 12 hours in the PM</p>
                 <p id="checkSQ6_text" class="checkSQ1_steps" style="display:none; font-size: 2.3vh"> Team Collaboration</p>
                 <p id="checkSQ7_text" class="checkSQ1_steps" style="display:none; font-size: 2.3vh"> Communication Skills</p>
                 <p id="checkSQ8_text" class="checkSQ1_steps" style="display:none; font-size: 2.3vh">  Creative Skills</p>
-                <p id="checkSQ9_text" class="checkSQ1_steps" style="display:none; font-size: 2.3vh"> --wrong answer--</p>
+                <p id="checkSQ9_text" class="checkSQ1_steps" style="display:none; font-size: 2.3vh"> Run a Mile</p>
                 <p id="checkSQ10_text" class="checkSQ1_steps" style="display:none; font-size: 2.3vh">  Problem-Solving Skills</p>
                 <br><br><br><br>
     </div>
@@ -476,7 +474,7 @@
 
     function nextBtn() { 
         var para = document.createElement("P");
-        para.innerHTML = "<a href='./resumePage/resume.html'><input type='button' style='border-radius: 5px; color: white; font-weight:bold; background: rgb(74, 117, 160); width: 20%; height: 5%;' value='NEXT PAGE'/></a>";
+        para.innerHTML = "<a href='resume.html'><input type='button' style='border-radius: 5px; color: white; font-weight:bold; background: rgb(74, 117, 160); width: 20%; height: 5%;' value='NEXT PAGE'/></a>";
         document.getElementById("nextBUTTON").appendChild(para);
 }
 
