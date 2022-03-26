@@ -1,2 +1,2 @@
 # HR-Simulation
-If you die in the game you die in real life.
+A HR department new employee trainning simulation web page.
